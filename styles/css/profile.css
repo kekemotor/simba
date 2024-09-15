@@ -1,0 +1,513 @@
+
+.Mcontainer{
+    display: grid;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Занимает всю высоту экрана */
+   
+    
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+#confim {
+    margin-top: 120px;
+    width: 70vw;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#confim p {
+    font-size: larger;
+}
+button{
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+}
+
+#confim button h2{
+    padding: 15px;
+}
+#confim button :hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease; 
+    color: #2f66d4; 
+    border-radius: 15px;
+    transition: 250ms;
+}
+
+#confim button:active{
+    border: 1px solid #2f66d4;
+}
+
+
+
+
+:root{
+    --primary: #1f2e88 ;
+    --fros-blue-color: #0050d5;
+    --secondary: #2f66d4 ;
+    --hover: #a2d9f5;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border:.2rem solid rgba(0,0,0,0.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,0.1);
+    --transition: all 0.3s ease-in-out;
+    --dark-gray: #a1a1a0;
+    --light-blue-color: #16c5ff
+}
+
+*{
+
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+}
+
+
+
+body{
+    font-size: 1.6rem;
+}
+
+/* global classes */
+
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    background: #42aaff;
+    font-size: 1.7rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: white;
+}
+
+
+
+
+.start-header { 
+    opacity: 1;
+    transform: translateY(0);
+    padding: 20px 0;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+    -webkit-transition : all 0.3s ease-out;
+    transition : all 0.3s ease-out;
+}
+.start-header.scroll-on {
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    padding: 10px 0;
+    -webkit-transition : all 0.3s ease-out;
+    transition : all 0.3s ease-out;
+}
+.start-header.scroll-on .navbar-brand img{
+    height: 24px;
+    -webkit-transition : all 0.3s ease-out;
+    transition : all 0.3s ease-out;
+}
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition : all 0.3s ease-out;
+    transition : all 0.3s ease-out;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-brand img{
+    height: 28px;
+    width: auto;
+    display: block;
+
+    -webkit-transition : all 0.3s ease-out;
+    transition : all 0.3s ease-out;
+}
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before{
+    width: 24px;
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after{
+    top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+.nav-link{
+    color: #212121 !important;
+    font-weight: 500;
+    transition: all 200ms linear;
+}
+.nav-item:hover .nav-link{
+    color: #8167a9 !important;
+}
+.nav-item.active .nav-link{
+    color: #777 !important;
+}
+.nav-link {
+    position: relative;
+    padding: 5px 0 !important;
+    display: inline-block;
+}
+.nav-item:after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #8167a9;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+    bottom: 0;
+    opacity: 1;
+}
+.nav-item.active:hover:after{
+    opacity: 0;
+}
+.nav-item{
+    position: relative;
+    transition: all 200ms linear;
+}
+
+/* #Primary style
+================================================== */
+
+.nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    transition: all 200ms linear;
+}
+.nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+.dropdown-menu {
+    padding: 10px!important;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #212121;
+    background-color: #fcfaff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-item {
+    padding: 3px 15px;
+    color: #212121;
+    border-radius: 2px;
+    transition: all 200ms linear;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: rgba(129,103,169,.6);
+} */
+
+
+
+
+
+
+.btn-blue{
+    background-color: var(--fros-blue-color);
+    color: var(--white);
+}
+
+.confim{
+    background-color: #2f66d4;
+}
+
+
+.disactivate{
+    background-color:grey ;
+}
+
+.disactivate:hover{
+    color:grey ;
+    background-color: white;
+}
+
+.scheduled-list {
+    display: none; /* Скрываем содержимое по умолчанию */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.scheduled-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.scheduled-list a:hover {
+    background-color: #f1f1f1;
+}
+
+.separator{
+    background-color: #000;
+    height: 2px;
+    margin-top: 5px;
+    width: 100%;
+}
+.btn-less-confim::before{
+    content: "Дата процедуры в прошлом";
+    font-size: small;
+}
+.btn-confim{
+    padding: 5px;
+    margin-left: 5px;
+}
+.btn-less-confim{   
+    background-color: gray;
+}
+.btn-active-confim{   
+    background-color: green;
+    cursor: pointer;
+}
+.btn-active-confim::before{   
+    content: "Подтвердить запись";
+}
+.btn-future-confim{   
+    background-color: gray;
+    cursor: not-allowed;
+}
+.btn-future-confim:active{   
+    border: none;
+}
+.btn-future-confim::before{   
+    content: "До записи более 24 ч.";
+}
+tr{
+    box-sizing: border-box;
+    margin: 15px;
+    height: 100%;
+}
+.btn-false-confim::before{
+    content: "Отклонить";
+}
+.btn-false-confim{
+    background-color: red;
+    cursor: pointer;
+}
+/* Увеличиваем размер шрифта для заголовков и основных элементов на мобильных устройствах */
+@media (max-width: 768px) {
+    .card-body h6, .btn {
+        font-size: 1.2em;
+    }
+}
+    /* Делаем кнопки больше и удобнее для нажатия на мобильных устройствах */
+    @media (max-width: 480px) {
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.2em;
+        }
+    }
+    /* Адаптируем таблицу */
+    @media (max-width: 768px) {
+        .card-body .row {
+            flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        }
+        
+        .card-body .col-sm-3, .card-body .col-sm-9 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    /* Адаптируем карточку пользователя */
+    @media (max-width: 992px) {
+        .card {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .card-body .row {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+/* Улучшаем отображение таблицы на маленьких экранах */
+@media (max-width: 768px) {
+    #confim {
+        align-self: center;
+        width: 90vw;
+        top:50%;
+            left: 50%;
+
+        }
+    .tdButton{
+        display: inline;
+    }
+    table, th, td {
+        font-size: 0.9em;
+        }
+        
+    table {
+        width: 100%;
+        }
+        
+    th, td {
+            padding: 10px;
+            display: block;
+            width: auto;
+            text-align: center;
+        }
+}
+
+/* Адаптация модального окна */
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        display: block;
+    }
+   
+    td{
+        padding: 0;
+    }        
+    #confim button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            width: 100%;
+            margin: 0;
+        }
+    
+    }
+/* Расположение кнопок горизонтально */
+.btn-container {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между кнопками */
+}
+
+/* Ориентация даты вправо */
+.date-container {
+    text-align: right;
+    color: #333; /* Темный цвет для контраста */
+    font-weight: bold; /* Жирный шрифт для выделения */
+}
+
+/* Добавление градиента фона для карточки профиля */
+.profile-card {
+    background: linear-gradient(to right, #f8e71c, #ffe57d); /* Градиентный фон */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень вокруг карточки */
+    border-radius: 10px; /* Скругленные углы карточки */
+}
+
+/* Цвета для кнопок */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+strong{
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #007bff;
+}
+
+.btn-past-confim{   
+    background-color:#007bff ;
+    cursor: not-allowed;
+}
+.btn-past-confim::before{   
+   content: "Запись была подтверждена ранее";
+}
+
+.btn-no-confim{   
+    background-color:red;
+    cursor: not-allowed;
+}
+.btn-no-confim::before{   
+   content: "Истёк срок подтверждения записи";
+}

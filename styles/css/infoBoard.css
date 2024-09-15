@@ -1,0 +1,32 @@
+/* Общие стили для всего блога */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5EA;
+}
+
+#chat {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.message {
+    border-bottom: 1px solid #E5E5EA;
+    padding: 10px 0;
+}
+
+.FirstName {
+    color: #007ACC;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.body {
+    color: #262626;
+    font-size: 14px;
+    line-height: 1.5;
+}

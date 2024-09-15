@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+<section class="header">
+
+    <a href="#" class="logo">Я Сигма</a>
+
+    <nav class="navbar">
+        <a href="#">главная</a>
+        <a href="#">услуги</a>
+        <a href="#">сотрудники</a>
+        <a href="#">лечебные корма</a>
+
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+<section id="home" class="home">
+
+    <div class="content">
+
+        <h3>клиника оснащена современным оборудованием</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt animi, alias cumque iure molestiae excepturi ?</p>
+        <a href="#book" class="btn">записаться</a>
+
+    </div>
+
+</section>
+<section id="about" class="about">
+
+    <h1 class="heading animate__animated animate__fadeInDown wow"> about us </h1>
+
+    <!--   content -->
+    <div class="row">
+
+        <!--     image -->
+        <div class="image animate__animated animate__fadeInLeft wow" id="slider">
+            <img src="https://celes.club/pictures/uploads/posts/2023-06/1687401897_celes-club-p-vetklinika-risunok-risunok-krasivo-45.jpg" alt="medical equipment">
+        </div>
+
+        <!--     info -->
+        <div class="content animate__animated animate__fadeInRight wow">
+            <h3>Ветеринарная клиника "Симба" </h3>
+            <p>Основана в 2010 году, и за прошедшее со дня открытия время мы выполняли самую важную для нас задачу – оказывали эффективную высококвалифицированную помощь домашним животным.</p>
+            <p>Ветеринарные врачи клиники имеют внушительный опыт оказания помощи различным животным, что обеспечивает неизменно высокий уровень ветеринарных услуг, предоставляемых нами. Как известно именно опыт врача – одно из самых важных звеньев успешного лечения питомца.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="book" id="book">
+    <h1 class="heading">book now</h1>
+    <div class="row animate__animated wow animate__swing">
+        <form action="">
+            <h3>Записаться на прием</h3>
+            <input type="text" placeholder="your name" class="box">
+            <input type="number" placeholder="your number" class="box">
+            <input type="email" placeholder="your email" class="box">
+            <div class="">
+                <select name="department" id="department" class="box">
+                    <option value="">Select Department</option>
+                    <option value="Department 1">Department 1</option>
+                    <option value="Department 2">Department 2</option>
+                    <option value="Department 3">Department 3</option>
+                </select>
+            </div>
+            <input type="date" class="box">
+            <input type="submit" value="Записаться" class="btn">
+        </form>
+    </div>
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Быстрые ссылки</h3>
+            <a href="home.html"> <i class="fas fa-angle-right"></i> Главная</a>
+            <a href="about.html"> <i class="fas fa-angle-right"></i> Услуги</a>
+            <a href="package.html"> <i class="fas fa-angle-right"></i> Сотрудники</a>
+            <a href="book.html"> <i class="fas fa-angle-right"></i> Лечебные корма</a>
+        </div>
+
+        <div class="box">
+            <h3>Другие ссылки</h3>
+            <a href="#"> <i class="fas fa-angle-right"></i> Реклама</a>
+            <a href="#"> <i class="fas fa-angle-right"></i> Поддержать проект </a>
+            <a href="#"> <i class="fas fa-angle-right"></i> Обратная связь</a>
+
+        </div>
+
+
+
+        <div class="box">
+            <h3>Социальные сети</h3>
+
+            <a href="#"> <i class="fab fa-vk"></i> Vkontakte </a>
+            <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+            <a href="#"> <i class="fab fa-youtube"></i> Youtube </a>
+
+        </div>
+
+    </div>
+
+
+
+</section>
+<!--<div id="slider">-->
+<!--    <img src="https://www.film.ru/sites/default/files/images/3-20(12).jpg" alt="Slide 1" />-->
+<!--    <img src="https://abrakadabra.fun/uploads/posts/2022-01/1643652218_6-abrakadabra-fun-p-tailer-derden-boitsovskii-klub-9.jpg" alt="Slide 2" />-->
+<!--    <img src="https://celes.club/uploads/posts/2022-10/1667241157_35-celes-club-p-tailer-derden-oboi-na-telefon-instagram-35.jpg" alt="Slide 3" />-->
+<!--</div>-->
+<script src="all.js"></script>
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+.btn-save{
+
+    display: inline-block;
+    color: white;
+    background: green;
+    font-size: 1.7rem;
+    border-radius: 15px;    
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+}
+
+.btn-delete{
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+    display: inline-block;
+    color: white;
+    background: red;
+    font-size: 1.7rem;
+    border-radius: 15px;    
+    cursor: pointer;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/css/infoBoard.css">
+    <link rel="stylesheet" href="styles/css/admin.css">
+    <style>
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .image-item {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- ... (остальной код остается без изменений) ... -->
+    
+    <div id="chatContainer">
+        <button id="sendAlert">Нажимать раз в день</button>
+        <div id="chat">
+            <div id="newMessage" class="message newMessage">
+                <p contenteditable="true" id="FirstName" class="FirstName">Новый пост</p>
+                <p contenteditable="true" id="body" class="body">Наведите мышку на интересующий вас текст, и нажмите. Затем отредактируйте его, и нажмите "Сохранить"</p>
+                <input type="file" id="file" multiple accept="image/*">
+                <button class="btn-save" onclick="newPost()">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="basket">
+        <table ><tr>
+                <th>Название товара</th>
+                <th>Нынешнее количество</th>
+                <th><button>Изменить количество</button></th>
+                <th><input type="text" placeholder="На какое количество изменить"></th>
+            </tr>
+            <tbody id="productCount">
+
+            </tbody>
+        </table>
+        <button onclick="printObject()"></button>
+    </div>
+
+    <div id="userBasket">
+        <table>
+            <tr>
+                <th>Почта</th>
+                <th>Таблетки</th>
+                <th>Общая цена</th>
+                <th>Номер для получения
+                    <input id="findCode" type="text" placeholder="Номер для поиска">
+                </th>
+                <th>Дата</th>
+            </tr>
+            <tbody id="userProduct">
+
+            </tbody>
+        </table>
+        <button onclick="printObject()"></button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/requester.js"></script>
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/adminBasket.js"></script>
+    <script src="scripts/userBasket.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/registration.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="login-page">
+    <div class="form">
+        <div class="action register-form">
+            <div class="confirmation">
+                <div class="box">
+                    <input data-required="true" id="email" type="text" placeholder="Почта"/>
+                </div>
+                <div class="box">
+                    <input data-min-length="8" data-max-length="30" id="password" type="password" placeholder="Пароль"/>
+                </div>
+            </div>
+            <button id="click">Создать</button>
+            <p class="message">Уже зарегестрированны<a href="#">Войти</a></p>
+        </div>
+        <div class="action1 action login-form">
+            <div class="box_login">
+                <input id="username" type="text" placeholder="Почта"/>
+                <input id="password1" type="password" placeholder="Пароль"/>
+            </div>
+            <button id="click1">Войти</button>
+
+
+            <p class="message">Не зарегестрированы? <a href="#">Создать аккаунт</a></p>
+                <p class="message">Я админ</p> <input  id="isAdmin" type="checkbox"> 
+            <!-- <p class="change">Забыли пароль? <a href="#">Сменить</a></p> -->
+        </div>
+        <div class="action1 change-form">
+            <div class="change-box">
+                <input id="change" type="text" placeholder="Почта"/>
+                <button id="click2">Послать</button>
+            </div>
+
+
+            <p class="change">Вы забыли пароль <a href="#">Назад</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/requester.js"></script>
+<script src="scripts/registration.js"></script>
+</body>
+</html>

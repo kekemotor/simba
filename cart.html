@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/css/cart.css">
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <aside class="categories">
+      <form>
+          <ul>
+              <li>
+                <li class="categorie picked">
+                  <p>Корма</p>
+                </li>
+                <li class="categorie">
+                  <p>Антибиотики</p>
+                </li>
+                <li class="categorie">
+                  <p>Глистогонные препараты</p>
+                </li>
+                <li class="categorie">
+                  <p>От блох и клещей</p>
+                </li>
+                <li class="categorie">
+                  <p>Для лечения ушей, глаз, зубов</p>
+                </li>
+                <li class="categorie">
+                  <p>Лактоскоп, шампуни</p>
+                </li>
+                <li class="categorie">
+                  <p>Петкам, онсиор</p>
+                </li>
+                <li class="categorie">
+                  <p>Вазосан, ветмибин</p>
+                </li>
+              </li>
+          </ul>
+      </form>
+  </aside>
+
+    <section class="product">
+      <div class="product__info">
+      </div>
+      <div class="cards">
+      <!--  <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/ugol.jpg"
+                alt="активированный уголь"
+              />
+            </a>
+            <div class="card__label">-1%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">52</div>
+              <div class="card__price card__price--common">1488</div>
+            </div>
+            <a href="#" class="card__title">
+              активированный уголь
+            </a>
+
+            <button class="card__add">В корзину</button>
+          </div>
+        </div> -->
+        
+      </div>
+    </section>
+    <button class="cart" id="cart">
+      <img class="cart__image" src="./images/cart.png" alt="Cart" srcset="" />
+      <div class="cart__num" id="cart_num">0</div>
+    </button>
+    <div class="popup">
+      <div class="popup__container" id="popup_container">
+        <div class="popup__item">
+          <h1 class="popup__title">Оформление заказа</h1>
+        </div>
+        <div class="popup__item" id="popup_product_list">
+          <div class="popup__product">
+            <h1>Название</h1>
+            <h2>Цена</h2>
+            
+          </div>
+        </div>
+        <div class="col-3">
+          <button id="EmailBtn" class="box" onclick="sendPills()">Оформить заказ</button>
+        </div>
+        <div class="popup__item">
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого</h2>
+            <output class="popup__cost-value" id="popup_cost">0</output>
+          </div>
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Скидка</h2>
+            <output class="popup__cost-value" id="popup_discount">0</output>
+          </div>
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого со скидкой</h2>
+            <output class="popup__cost-value" id="popup_cost_discount"
+              >0</output
+            >
+          </div>
+        </div>
+        <button class="popup__close" id="popup_close">&#10006;</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/requester.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/cart.js"></script>
+  </body>
+</html>

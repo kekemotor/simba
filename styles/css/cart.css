@@ -1,0 +1,27 @@
+#Email{
+    display: block;
+    border: 1px solid #1f2e88;
+    color: #1f2e88;
+    border-radius:2px;
+    
+}
+#EmailBtn{
+    margin-left: 15px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #42aaff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #42aaff;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    margin-top: auto;
+}
+.col-3{
+    display: flex;
+}
