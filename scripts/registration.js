@@ -115,9 +115,9 @@ const LogIn = async (data)=>{
     try{
         console.log(document.getElementById("isAdmin").checked)
         if(document.getElementById("isAdmin").checked){
-            const res = await requester("POST","RFS/CheckRFS",{
+            const res = await requester("POST","RFS/RFS",{
                 surgeryEmail:data.userEmail,
-                surgeryCode:Number(data.User_password)
+                passwordForSurgery:data.User_password
             })
             if(res.statusCode ===200){
                 window.location.href = "Admin.html"
